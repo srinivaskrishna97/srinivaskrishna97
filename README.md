@@ -196,7 +196,7 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=srinivaskrishna97&layout=compact&hide_border=true&title_color=02D9F7FF&text_color=02D9F7FF&bg_color=0d1117" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=srinivaskrishna97&layout=compact&hide_border=true&title_color=02D9F7FF&text_color=02D9F7FF&bg_color=0d1117" />
 
 </div>
 
