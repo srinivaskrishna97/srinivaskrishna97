@@ -214,7 +214,7 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 ## 🏆 GitHub Achievements
 
-<img src="https://github-profile-trophy.vercel.app/?username=srinivaskrishna97&theme=discord&no-frame=true&no-bg=true&margin-w=4&column=7" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=srinivaskrishna97&theme=react-dark&hide_border=true&bg_color=0d1117&color=02D9F7FF&line=02D9F7FF&point=02D9F7FF" alt="Contribution Graph" />
 
 </div>
 
