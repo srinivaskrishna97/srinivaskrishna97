@@ -201,14 +201,11 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 <br/><br/>
 
-<img height="180em" src="https://ghstats.krisgosolutions.com/api?username=srinivaskrishna97&show_icons=true&count_private=true&include_all_commits=true&rank_icon=github&show=reviews,prs_merged,prs_merged_percentage&hide_border=true&title_color=02D9F7&text_color=C9D1D9&bg_color=0D1117&icon_color=02D9F7" alt="GitHub Stats" />
+<img height="180em" src="https://ghstats.krisgosolutions.com/api?username=srinivaskrishna97&show_icons=true&count_private=true&include_all_commits=true&rank_icon=github&show=prs_merged,prs_merged_percentage&hide=stars&hide_border=true&title_color=02D9F7&text_color=C9D1D9&bg_color=0D1117&icon_color=02D9F7" alt="GitHub Stats" />
 <img height="180em" src="https://ghstats.krisgosolutions.com/api/top-langs/?username=srinivaskrishna97&layout=compact&count_private=true&langs_count=8&hide_border=true&title_color=02D9F7&text_color=C9D1D9&bg_color=0D1117" alt="Top Languages" />
 
 <br/><br/>
 
-<img src="https://ghstats.krisgosolutions.com/streak?user=srinivaskrishna97&theme=tokyonight&hide_border=true&background=0D1117&stroke=0D1117&ring=02D9F7&fire=02D9F7&currStreakLabel=02D9F7" alt="GitHub Streak" />
-
-<br/><br/>
 
 <img src="https://ghstats.krisgosolutions.com/graph?username=srinivaskrishna97&theme=react-dark&hide_border=true&bg_color=0D1117&color=02D9F7&line=02D9F7&point=02D9F7&area=true" alt="Contribution Graph" />
 
@@ -222,17 +219,18 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 <div align="center">
 
-## 🧩 Featured Projects
+## ⚙️ What I Build
 
 </div>
 
-| Project | What it is | Stack |
-|---|---|---|
-| **[CovidAppv2](https://github.com/srinivaskrishna97/CovidAppv2)** | Location-aware COVID-19 guidance app — regional rules, travel/quarantine info, push notifications, live stats with map and chart views | `Java` `Android` |
-| **[Social_Media](https://github.com/srinivaskrishna97/Social_Media)** | Social networking application built on the Java stack | `Java` |
-| **[Krisgo_odoo](https://github.com/srinivaskrishna97/Krisgo_odoo)** | Self-hosted Odoo ERP deployment running on my home Kubernetes cluster | `Python` `K8s` `Docker` |
-| **[PiKVM suite](https://github.com/srinivaskrishna97?tab=repositories&q=pikvm)** | Working set of PiKVM components — DIY IP-KVM over Raspberry Pi for remote bare-metal control | `Python` `Linux` `ARM` |
-| **[Portfolio](https://srinivaskrishna97.github.io)** | Personal portfolio site | `HTML` `CSS` |
+Most of my work lives in private infrastructure rather than public repos:
+
+- **Self-hosted Kubernetes platform** — a multi-node cluster (amd64 + ARM64) running real workloads: private container registry, multi-arch image pipelines, NodePort topology, and an nginx edge with automated Let's Encrypt TLS and Cloudflare DNS
+- **Multi-tenant IAM platform** — FastAPI + PostgreSQL with tenant-isolated RBAC, Google and Microsoft SSO, OAuth2/OIDC flows, permission bundles, and IdP group-to-role mapping
+- **Internal dashboards & ERP** — React/TypeScript front ends over Python services, deployed continuously via self-hosted GitHub Actions runners
+- **Java & Spring Boot** — my professional day-to-day: backend services, APIs, and system integrations
+
+> The analytics cards above aren't third-party widgets — they're containers I built and run on that cluster, behind my own TLS.
 
 ---
 
@@ -252,7 +250,7 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
-### 🎯 "Learning and building, one project at a time"
+### 🎯 "If it matters, I run it myself — in production, on my own metal"
 
 </div>
 
