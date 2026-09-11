@@ -1,11 +1,15 @@
 <div align="center">
-  
+
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=Srinivas%20Krishna&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=40&desc=Java%20Developer%20|%20Software%20Engineer%20|%20Cloud%20Enthusiast&descAlignY=60&descSize=20)
+
+<a href="https://srinivaskrishna97.github.io"><img src="https://img.shields.io/badge/Portfolio-02D9F7?style=for-the-badge&logo=aboutdotme&logoColor=0D1117" alt="Portfolio" /></a>
+<a href="https://github.com/srinivaskrishna97?tab=followers"><img src="https://img.shields.io/github/followers/srinivaskrishna97?style=for-the-badge&color=02D9F7&labelColor=0D1117&logo=github" alt="Followers" /></a>
+<img src="https://komarev.com/ghpvc/?username=srinivaskrishna97&style=for-the-badge&color=02D9F7&label=PROFILE+VIEWS" alt="Profile Views" />
 
 </div>
 
 <div align="center">
-  
+
 ## 🚀 About Me
 
 <img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
@@ -14,10 +18,11 @@
 
 I'm a **Java Developer** and **Software Engineer** who enjoys building applications and working with cloud technologies. My focus is on creating reliable software and exploring modern development practices.
 
-- 🔭 I'm currently working with **Java**, **Spring Boot**, and **cloud platforms**
-- 🌱 I'm learning more about **microservices architecture** and **cloud-native development**
-- 👯 I'm interested in collaborating on **Java projects** and **cloud solutions**
-- 💬 Feel free to ask me about **Java development**, **software engineering**, and **cloud technologies**
+- 🔭 Currently working with **Java**, **Spring Boot**, and **cloud platforms**
+- 🌱 Going deeper on **microservices architecture** and **cloud-native development**
+- 🏗️ I run a **self-hosted Kubernetes cluster** at home — the stats cards below are served from it
+- 👯 Open to collaborating on **Java projects** and **cloud solutions**
+- 💬 Ask me about **Java development**, **software engineering**, and **cloud technologies**
 - ⚡ I really enjoy working with **cloud platforms** and building scalable solutions
 
 <br clear="both">
@@ -188,43 +193,63 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 </div>
 
----
-
 <div align="center">
 
 ## 📊 GitHub Analytics
 
-<div align="center">
+<sub>⚡ Served from my own Kubernetes cluster — private contributions included</sub>
 
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=srinivaskrishna97&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=02D9F7FF&text_color=02D9F7FF&bg_color=0d1117&icon_color=02D9F7FF" alt="GitHub Stats" />
+<br/><br/>
 
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=srinivaskrishna97&layout=compact&hide_border=true&title_color=02D9F7FF&text_color=02D9F7FF&bg_color=0d1117&count_private=true" />
+<img height="180em" src="https://ghstats.krisgosolutions.com/api?username=srinivaskrishna97&show_icons=true&count_private=true&include_all_commits=true&rank_icon=github&show=reviews,prs_merged,prs_merged_percentage&hide_border=true&title_color=02D9F7&text_color=C9D1D9&bg_color=0D1117&icon_color=02D9F7" alt="GitHub Stats" />
+<img height="180em" src="https://ghstats.krisgosolutions.com/api/top-langs/?username=srinivaskrishna97&layout=compact&count_private=true&langs_count=8&hide_border=true&title_color=02D9F7&text_color=C9D1D9&bg_color=0D1117" alt="Top Languages" />
 
-</div>
+<br/><br/>
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=srinivaskrishna97&theme=tokyonight&hide_border=true&background=0D1117&stroke=0D1117&ring=02D9F7FF&fire=02D9F7FF&currStreakLabel=02D9F7FF" alt="GitHub Streak" />
-</div>
+<img src="https://ghstats.krisgosolutions.com/streak?user=srinivaskrishna97&theme=tokyonight&hide_border=true&background=0D1117&stroke=0D1117&ring=02D9F7&fire=02D9F7&currStreakLabel=02D9F7" alt="GitHub Streak" />
 
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=srinivaskrishna97&theme=github_dark" alt="Profile Summary"/>
-</div>
+<br/><br/>
 
----
+<img src="https://ghstats.krisgosolutions.com/graph?username=srinivaskrishna97&theme=react-dark&hide_border=true&bg_color=0D1117&color=02D9F7&line=02D9F7&point=02D9F7&area=true" alt="Contribution Graph" />
 
-<div align="center">
+<br/><br/>
 
-## 🏆 GitHub Achievements
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=srinivaskrishna97&theme=react-dark&hide_border=true&bg_color=0d1117&color=02D9F7FF&line=02D9F7FF&point=02D9F7FF" alt="Contribution Graph" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=srinivaskrishna97&theme=github_dark" alt="Profile Summary" />
 
 </div>
 
 ---
 
 <div align="center">
-  
+
+## 🧩 Featured Projects
+
+</div>
+
+| Project | What it is | Stack |
+|---|---|---|
+| **[CovidAppv2](https://github.com/srinivaskrishna97/CovidAppv2)** | Location-aware COVID-19 guidance app — regional rules, travel/quarantine info, push notifications, live stats with map and chart views | `Java` `Android` |
+| **[Social_Media](https://github.com/srinivaskrishna97/Social_Media)** | Social networking application built on the Java stack | `Java` |
+| **[Krisgo_odoo](https://github.com/srinivaskrishna97/Krisgo_odoo)** | Self-hosted Odoo ERP deployment running on my home Kubernetes cluster | `Python` `K8s` `Docker` |
+| **[PiKVM suite](https://github.com/srinivaskrishna97?tab=repositories&q=pikvm)** | Working set of PiKVM components — DIY IP-KVM over Raspberry Pi for remote bare-metal control | `Python` `Linux` `ARM` |
+| **[Portfolio](https://srinivaskrishna97.github.io)** | Personal portfolio site | `HTML` `CSS` |
+
+---
+
+<div align="center">
+
+## 🤝 Connect
+
+<a href="https://srinivaskrishna97.github.io"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=02D9F7" alt="Portfolio" /></a>
+<a href="https://github.com/srinivaskrishna97"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=02D9F7" alt="GitHub" /></a>
+
+<!-- Add your LinkedIn / email when ready:
+<a href="https://linkedin.com/in/YOUR-HANDLE"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=02D9F7" /></a>
+<a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=02D9F7" /></a>
+-->
+
 ### 💭 Quote of the Day
+
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 ### 🎯 "Learning and building, one project at a time"
