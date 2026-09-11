@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: github-readme-stats
+  namespace: github-stats
+  labels:
+    app: github-readme-stats
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: github-readme-stats
+  template:
+    metadata:
+      labels:
+        app: github-readme-stats
+    spec:
+      containers:
+        - name: github-readme-stats
+          image: 192.168.2.26:32000/github-readme-stats:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9000
+          env:
+            - name: PAT_1
+              valueFrom:
+                secretKeyRef:
+                  name: github-stats-secret
+                  key: PAT_1
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+          # NOTE: /api/status/up makes a live outbound call to the GitHub API
+          # (see api/status/up.js) rather than a purely local check, so the
+          # k8s default httpGet probe timeout (1s) is too tight and caused an
+          # observed transient "context deadline exceeded" liveness/readiness
+          # failure during smoke testing. timeoutSeconds raised to 5 on all
+          # three probes to absorb normal GitHub API round-trip latency.
+          startupProbe:
+            httpGet:
+              path: /api/status/up
+              port: 9000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 5
+            failureThreshold: 30
+          livenessProbe:
+            httpGet:
+              path: /api/status/up
+              port: 9000
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            timeoutSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /api/status/up
+              port: 9000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 5

@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: github-readme-streak-stats
+  namespace: github-stats
+  labels:
+    app: github-readme-streak-stats
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: github-readme-streak-stats
+  template:
+    metadata:
+      labels:
+        app: github-readme-streak-stats
+    spec:
+      containers:
+        - name: github-readme-streak-stats
+          image: 192.168.2.26:32000/github-readme-streak-stats:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: github-stats-secret
+                  key: TOKEN
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "384Mi"
+          # NOTE: /demo/ renders a real card for a hardcoded demo user (live
+          # GitHub API call), matching upstream's own Docker HEALTHCHECK
+          # philosophy (their Dockerfile uses --timeout=10s for this exact
+          # path). k8s httpGet probe default timeout (1s) is too tight for
+          # that, mirroring the timeoutSeconds fix applied to
+          # github-readme-stats after an observed probe timeout there.
+          startupProbe:
+            httpGet:
+              path: /demo/
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 10
+            failureThreshold: 30
+          livenessProbe:
+            httpGet:
+              path: /demo/
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            timeoutSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /demo/
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 10
