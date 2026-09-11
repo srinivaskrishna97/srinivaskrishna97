@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: github-profile-summary-cards
+  namespace: github-stats
+  labels:
+    app: github-profile-summary-cards
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: github-profile-summary-cards
+  template:
+    metadata:
+      labels:
+        app: github-profile-summary-cards
+    spec:
+      containers:
+        - name: github-profile-summary-cards
+          image: 192.168.2.26:32000/github-profile-summary-cards:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
+            # Upstream's own var name is GITHUB_TOKEN (confirmed via
+            # .env.example and api/utils/github-token-updater.ts), not TOKEN —
+            # but k8s lets the container env var name differ from the secret
+            # key, so the existing TOKEN key is reused as-is. No secret patch
+            # needed; the same PAT already used by activity-graph/streak-stats
+            # is shared here too.
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: github-stats-secret
+                  key: TOKEN
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          # /api/theme is purely local (lists the built-in ThemeMap, no GitHub
+          # API call, no token needed) — same "static/token-independent"
+          # category as github-readme-activity-graph's `/` health check, so
+          # the k8s default 1s httpGet timeout is fine here (unlike the two
+          # siblings whose health paths make a live GitHub API call and
+          # needed timeoutSeconds raised).
+          startupProbe:
+            httpGet:
+              path: /api/theme
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 30
+          livenessProbe:
+            httpGet:
+              path: /api/theme
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /api/theme
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
