@@ -197,7 +197,7 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 ## 📊 GitHub Analytics
 
-<sub>⚡ Served from my own Kubernetes cluster — private contributions included</sub>
+<sub>⚡ Every card below is served from my own Kubernetes cluster — my containers, my token, my TLS</sub>
 
 <br/><br/>
 
@@ -211,7 +211,16 @@ I'm a **Java Developer** and **Software Engineer** who enjoys building applicati
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=srinivaskrishna97&theme=github_dark" alt="Profile Summary" />
+<img src="https://ghstats.krisgosolutions.com/summary/cards/profile-details?username=srinivaskrishna97&theme=github_dark" alt="Profile Summary" />
+
+<br/><br/>
+
+<img height="200em" src="https://ghstats.krisgosolutions.com/summary/cards/repos-per-language?username=srinivaskrishna97&theme=github_dark" alt="Top Languages by Repo" />
+<img height="200em" src="https://ghstats.krisgosolutions.com/summary/cards/most-commit-language?username=srinivaskrishna97&theme=github_dark" alt="Top Languages by Commit" />
+
+<br/><br/>
+
+<img src="https://ghstats.krisgosolutions.com/summary/cards/productive-time?username=srinivaskrishna97&theme=github_dark" alt="Productive Time" />
 
 </div>
 
