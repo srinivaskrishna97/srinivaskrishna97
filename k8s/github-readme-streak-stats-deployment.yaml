@@ -32,6 +32,8 @@ spec:
                 secretKeyRef:
                   name: github-stats-secret
                   key: TOKEN
+            - name: WHITELIST
+              value: "srinivaskrishna97"
           resources:
             requests:
               cpu: "100m"

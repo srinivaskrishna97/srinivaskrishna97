@@ -32,6 +32,8 @@ spec:
                 secretKeyRef:
                   name: github-stats-secret
                   key: PAT_1
+            - name: CACHE_SECONDS
+              value: "14400"
           resources:
             requests:
               cpu: "100m"
