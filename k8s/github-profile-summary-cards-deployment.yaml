@@ -22,7 +22,11 @@ spec:
     spec:
       containers:
         - name: github-profile-summary-cards
-          image: 192.168.2.26:32000/github-profile-summary-cards:latest
+          # 2026-09-12: patched fork (see src/github-api/profile-details.ts /
+          # src/cards/profile-details-card.ts diffs) — adds a PRIVATE repo
+          # count alongside the public one. Pinned to a dated tag (not
+          # :latest) so a rollback is a one-line image-tag revert.
+          image: 192.168.2.26:32000/github-profile-summary-cards:private-repos-20260912
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
