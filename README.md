@@ -12,7 +12,6 @@
 
 ## 🚀 About Me
 
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
 
 </div>
 
@@ -240,6 +239,7 @@ Most of my work lives in private infrastructure rather than public repos:
 - **Java & Spring Boot** — my professional day-to-day: backend services, APIs, and system integrations
 
 > The analytics cards above aren't third-party widgets — they're containers I built and run on that cluster, behind my own TLS.
+> The manifests, Dockerfiles and proxy config are open: **[selfhosted-github-widgets](https://github.com/srinivaskrishna97/selfhosted-github-widgets)**.
 
 ---
 
@@ -250,14 +250,7 @@ Most of my work lives in private infrastructure rather than public repos:
 <a href="https://srinivaskrishna97.github.io"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=02D9F7" alt="Portfolio" /></a>
 <a href="https://github.com/srinivaskrishna97"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=02D9F7" alt="GitHub" /></a>
 
-<!-- Add your LinkedIn / email when ready:
-<a href="https://linkedin.com/in/YOUR-HANDLE"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=02D9F7" /></a>
-<a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=02D9F7" /></a>
--->
 
-### 💭 Quote of the Day
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 ### 🎯 "If it matters, I run it myself — in production, on my own metal"
 
